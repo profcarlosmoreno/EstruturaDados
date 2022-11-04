@@ -1,0 +1,33 @@
+package Hash_Table_Insere;
+import java.util.*; 
+
+public class Hash_Table_Insere {
+	
+    public static void main(String[] args) 
+    { 
+  
+        // Criando uma Hashtable vazia
+        Hashtable<Integer, String> hash_table =  
+                           new Hashtable<Integer, String>(); 
+  
+        // Inserindo valores na tabela 
+        hash_table.put(10, "Caro colega"); 
+        hash_table.put(15, "Bem-vindo!!"); 
+        hash_table.put(20, "nerd"); 
+        hash_table.put(25, ":)"); 
+        hash_table.put(30, "muito"); 
+  
+        // Exibindo os valores da Hashtable 
+        System.out.println("A tabela inicial é: " + hash_table); 
+  
+        // Inserindo a chave existente junto com o novo valor
+        String returned_value = (String)hash_table.put(20, "seja"); 
+  
+        // Verificando o valor retornado 
+        System.out.println("O valor retornado é: " + returned_value); 
+  
+        // Exibindo o valor da nova tabela
+        System.out.println("A nova tabela é: " + hash_table); 
+    }
+
+}
