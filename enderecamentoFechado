@@ -1,0 +1,8 @@
+#define numEntradas 8
+Hashing Aberto ou Encadeado: Exercício
+typedef struct _Hash
+{
+	int chave;
+	struct _Hash *prox;
+} Hash;
+typedef Hash* Tabela[numEntradas];
