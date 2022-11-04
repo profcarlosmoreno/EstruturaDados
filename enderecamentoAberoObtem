@@ -1,0 +1,28 @@
+package Hash_Table_Obtem;
+import java.util.*; 
+  
+public class Hash_Table_Obtem { 
+    public static void main(String[] args) 
+    { 
+  
+        // Criando uma Hashtable vazia
+        Hashtable<Integer, String> hash_table =  
+                           new Hashtable<Integer, String>(); 
+  
+        // Inserindo valores na tabela 
+        hash_table.put(10, "Caro colega"); 
+        hash_table.put(15, "Bem-vindo!!"); 
+        hash_table.put(20, "nerd"); 
+        hash_table.put(25, ":)"); 
+        hash_table.put(30, "muito"); 
+  
+        // Exibindo os valores da Hashtable  
+        System.out.println(“A tabela inicial é: “ + hash_table); 
+  
+        // Obtendo o valor de 30 
+        System.out.println(“O valor é: “ + hash_table.get(30)); 
+  
+        // Obtendo o valor de 15 
+        System.out.println(“O valor é: “ + hash_table.get(15)); 
+    }
+}
