@@ -1,0 +1,10 @@
+void inserirHash(Tabela tabela, int n)
+{
+	Hash* novo;
+	Hashing Aberto ou Encadeado: Exercício
+	int pos = funcaoHashing(n);
+	novo = (Hash *) malloc (sizeof (Hash));
+	novo->chave = n;
+	novo->prox = tabela[pos];
+	tabela[pos] = novo;
+}
