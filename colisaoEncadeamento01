@@ -1,0 +1,16 @@
+...
+public Aluno get(int chave) {
+    int hash = hash(chave);
+    ArrayList<Aluno> alunos = this.tabela[hash];
+    
+    if (alunos == null) 
+        return null;
+    
+    for (Aluno aluno : alunos) {
+            if (aluno.matricula == chave)
+                return aluno;
+    }
+    
+    return null;
+}
+...
