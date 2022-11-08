@@ -1,0 +1,12 @@
+public No removeValorMinimoDaArvore(No node) {
+    if (node == null) {
+        System.out.println("  ERRO ");
+    } else if (node.esquerda != null) {
+        node.esquerda = removeValorMinimoDaArvore(node.esquerda);
+        return node;
+    } else {
+      //Se não tiver elemento esquerdo só nos resta o da direita
+        return node.direita;
+    }
+    return null;
+}
